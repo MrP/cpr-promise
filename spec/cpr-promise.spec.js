@@ -1,8 +1,8 @@
-/*global jasmine*/
+/*global jasmine, expect*/
 var cprp = require('../index.js');
 var rimraf = require('rimraf');
 var fs = require('fs');
-var compareFiles = require('./compareFiles.helper.js').compareFiles;
+var fileMatcher = require('node-jasmine-file-matcher');
 
 jasmine.DEFAULT_TIMEOUT_INTERVAL = 600000;
 var tmpDir = process.env.TMPDIR || '/tmp';
@@ -10,12 +10,13 @@ var tempDir = tmpDir + '/cpr-promise_spec_' + process.pid;
 
 describe('cpr-promise', function () {
     beforeEach(function () {
+        jasmine.addMatchers(fileMatcher);
         fs.mkdirSync(tempDir);
     });
     describe('When the copy succeeds', function () {
         it('resolves', function (done) {
             cprp('spec/test/', tempDir)
-            .then(() => compareFiles(tempDir + '/testfolder/test.txt', 'spec/test/testfolder/test.txt'))
+            .then(() => expect(tempDir + '/testfolder/test.txt').toEqualFile('spec/test/testfolder/test.txt'))
             .then(done)
             .catch(done.fail);
         });

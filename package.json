@@ -26,6 +26,7 @@
   "devDependencies": {
     "fs-promise": "^1.0.0",
     "jasmine": "^2.5.2",
+    "node-jasmine-file-matcher": "^0.1.0",
     "rimraf": "^2.5.4"
   }
 }
