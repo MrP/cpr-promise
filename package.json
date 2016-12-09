@@ -1,0 +1,31 @@
+{
+  "name": "cpr-promise",
+  "version": "0.1.0",
+  "description": "promise wrapper around the cpr node module",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrP/cpr-promise.git"
+  },
+  "keywords": [
+    "cpr",
+    "promise"
+  ],
+  "author": "Victor Rodriguez Gil",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MrP/cpr-promise/issues"
+  },
+  "homepage": "https://github.com/MrP/cpr-promise#readme",
+  "dependencies": {
+    "cpr": "^2.0.0"
+  },
+  "devDependencies": {
+    "fs-promise": "^1.0.0",
+    "jasmine": "^2.5.2",
+    "rimraf": "^2.5.4"
+  }
+}
