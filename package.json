@@ -21,12 +21,12 @@
   },
   "homepage": "https://github.com/MrP/cpr-promise#readme",
   "dependencies": {
-    "cpr": "^2.0.0"
+    "cpr": "^2.0.2"
   },
   "devDependencies": {
     "fs-promise": "^1.0.0",
-    "jasmine": "^2.5.2",
-    "node-jasmine-file-matcher": "^0.1.0",
+    "jasmine": "^2.5.3",
+    "node-jasmine-file-matcher": "^0.1.1",
     "rimraf": "^2.5.4"
   }
 }
