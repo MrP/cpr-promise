@@ -24,9 +24,9 @@
     "cpr": "^2.0.2"
   },
   "devDependencies": {
-    "fs-promise": "^1.0.0",
+    "fs-promise": "^2.0.0",
     "jasmine": "^2.5.3",
     "node-jasmine-file-matcher": "^0.1.1",
-    "rimraf": "^2.5.4"
+    "rimraf": "^2.6.1"
   }
 }
