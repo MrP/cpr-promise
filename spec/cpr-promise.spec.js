@@ -26,7 +26,9 @@ describe('cpr-promise', function () {
         it('rejects', function (done) {
             cprp('spec/doesntexist/', tempDir)
             .then(done.fail)
-            .catch(done);
+            .catch(function () {
+                done();
+            });
         });
     });
 
