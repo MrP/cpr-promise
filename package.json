@@ -1,6 +1,6 @@
 {
   "name": "cpr-promise",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "promise wrapper around the cpr node module",
   "main": "index.js",
   "scripts": {
